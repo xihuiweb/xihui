@@ -1,88 +1,195 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>原创动力风格官网</title>
-    <!-- 引入Bootstrap框架 -->
-    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* 自定义品牌色 */
-        :root {
-            --primary-color: #2A5CAA; /* 主色调参考网页8的蓝色科技感 */
-            --secondary-color: #FFD700; /* 辅助色增强活力 */
-        }
-        .navbar {
-            background-color: rgba(255,255,255,0.95);
-            border-bottom: 1px solid #eee;
-        }
-        .banner {
-            height: 600px;
-            background: linear-gradient(rgba(42,92,170,0.8), rgba(42,92,170,0.5)),
-                        url('https://example.com/bg.jpg') center/cover;
-            color: white;
-            display: flex;
-            align-items: center;
-        }
-        .service-card {
-            transition: transform 0.3s; /* 交互效果参考网页3的H5预览体验 */
-        }
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-    </style>
+	<meta charset="utf-8" />
+	<meta property="wb:webmaster" content="02c576e88d795ab0" />
+	<meta name="baidu-site-verification" content="7EuDyTWdqI" />
+	<title>原创动力-“让我们的色彩为世间增添欢笑!"</title>
+	<link rel="stylesheet" type="text/css" href="/css/top_new.css">
+	<link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<link rel="stylesheet" type="text/css" href="/css/bottom_new.css">
+	<script src="/js/jquery-2.1.1.min.js"></script>
+	<script src="/js/vue.min.js"></script>
 </head>
+<script src="/js/vuex.js"></script>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="Logo" height="40">
-                <span class="ms-2">喜灰之声</span>
-            </a>
-            <div class="d-flex">
-                <a href="#" class="btn btn-outline-primary me-2">注册</a>
-                <a href="#" class="btn btn-primary">登录</a>
-            </div>
-        </div>
-    </nav>
+<div id="all">
+	<div id="top_menu">
+		<div id="top_menu_main">
+			<div id="login">
+				<iframe frameborder="0" scrolling="no" src="/status.aspx?return=/index.html" style="width:200px; height:35px;"></iframe>
+			</div>
+			<ul>
+				<li class="tm_item_0">
+					<a href="/index.html">首页</a>
+				</li>
+				<li class="tm_item_1">
+					<a>最新资讯</a>
+					<div class="tm_item_main">
+						<a href="/news/list.html">最新资讯</a>
+						<a href="/event.html">历年大事记</a>
+						<img src="/images/menu-1.png" />
+					</div>
+				</li>
+				<li class="tm_item_2">
+					<a>关于我们</a>
+					<div class="tm_item_main">
+						<a href="/about1.html">公司简介</a>
+						<a href="/about2.html">公司荣誉</a>
+						<a href="/about3.html">主创团队</a>
+						<a href="/about4.html">找到我们</a>
+						<img src="/images/menu-7.png" />
+					</div>
+				</li>
+				<li class="tm_item_3">
+					<a>动漫情报</a>
+					<div class="tm_item_main">
+						<a href="/time.html">播放时间表</a>
+						<a href="/tv.html">动画系列</a>
+						<a href="/movie.html">大电影系列</a>
+						<img src="/images/menu-2.png" />
+					</div>
+				</li>
+				<li class="tm_item_4">
+					<a>版刊物</a>
+					<div class="tm_item_main">
+						<a href="/book/bookShelf2.html">羊羊杂志</a>
+						<a href="/book/bookShelf.html">羊羊图书</a>
+						<img src="/images/menu-3.png" style="margin-left:-10px"/>
+					</div>
+				</li>
+				<li class="tm_item_5">
+					<a>音乐舞台剧</a>
+					<div class="tm_item_main">
+						<a href="/carnival.html">羊羊人偶剧</a>
+						<img src="/images/menu-4.png" />
+					</div>
+				</li>
+				<li class="tm_item_6">
+					<a>卡通乐园</a>
+					<div class="tm_item_main">
+						<a href="/act/index.html">活动专区</a>
+						<a href="/painting/index.html">下载专区</a>
+						<img src="/images/menu-5.png" />
+					</div>
+				</li>
+				<li class="tm_item_7">
+					<a>社会责任</a>
+					<div class="tm_item_main">
+						<a href="/CSR.html">公益短片</a>
+						<a href="/public.html">羊光公益行动</a>
+						<a href="/IPR.html">知识产权</a>
+						<img src="/images/menu-6.png" />
+					</div>
+				</li>
+			</ul>
+			<div id="top_login">
 
-    <!-- 主视觉Banner -->
-    <section class="banner">
-        <div class="container text-center">
-            <h1 class="display-4 mb-4">让创意点亮世界</h1>
-            <p class="lead">专业内容服务与技术支持</p>
-        </div>
-    </section>
+			</div>
+		</div>
+	</div>
+	<div id="banner">
+		<div id="swiper-banner" class="swiper-container">
+			<div class="swiper-wrapper" style="width:700%">
+				<div class="swiper-slide"><a href="#" target="_blank"><img src="/images/banner/gw_banner_71.jpg"/></a></div>
+				<div class="swiper-slide"><a href="https://mp.weixin.qq.com/s/nb9NXGzQT__sLiLlqaoaUw" target="_blank"><img src="/images/banner/gw_banner_66.jpg"/></a></div>
+				<div class="swiper-slide"><a href="https://mp.weixin.qq.com/s/5QtMXju7urMKZYSAHE9V2A" target="_blank"><img src="/images/banner/gw_banner_65.jpg"/></a></div>
+				<div class="swiper-slide"><a href="https://mp.weixin.qq.com/s/AUayIE8AY-GnW4xHnDXkoA" target="_blank"><img src="/images/banner/gw_banner_62.jpg"/></a></div>
+				<div class="swiper-slide"><a href="https://mp.weixin.qq.com/s/qpBGO5BZLlwkvqJ1Rnx_2g" target="_blank"><img src="/images/banner/gw_banner_61.jpg"/></a></div>
+			</div>
+			<div id="swiper-banner-pagination" class="swiper-pagination"></div>
+			<div id="swiper-banner-prev" class="swiper-button-prev"></div>
+			<div id="swiper-banner-next" class="swiper-button-next"></div>
+		</div>
+	</div>
+	<div id="subject">
+		<div id="swiper-subject" class="swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide"><a title="智趣羊学堂" href="http://www.22dm.com/tv/school/index.html" target="_blank"><img src="images/index/i_0.png" height="100"/></a></li>
+				<li class="swiper-slide"><a title="嘻哈闯世界" href="http://www.22dm.com/tv/xh/pages/sky/index.html" target="_blank"><img src="images/index/i_1.png" height="100"/></a></li>
+				<li class="swiper-slide"><a title="宋代足球小将" href="http://soccerkid.22dm.com" target="_blank"><img src="images/index/i_9.png" height="100"/></a></li>
+				<li class="swiper-slide"><a title="七色战记" href="http://bbtv.22dm.com" target="_blank"><img src="images/index/i_10.png" height="100"/></a></li>
+				<li class="swiper-slide"><a title="小宋当家" href="http://xiaosong.22dm.com" target="_blank"><img src="images/index/i_8.png" height="100"/></a></li>
+				<li class="swiper-slide"><a title="宝贝女儿好妈妈" href="http://7colors.22dm.com" target="_blank"><img src="images/index/i_11.png" height="100"/></a></li>
+				<li class="swiper-slide"><a title="欢乐大联盟" href="http://www.22dm.com/tv/happy/index.html" target="_blank"><img src="images/index/i_2.png" height="100"/></a></li>
+				<li class="swiper-slide"><a title="原始世界历险记" href="http://era.22dm.com" target="_blank"><img src="images/index/i_3.png" height="100"/></a></li>
+				<li class="swiper-slide"><a title="开心方程式" href="http://formula.22dm.com" target="_blank"><img src="images/index/i_4.png" height="100"/></a></li>
+				<li class="swiper-slide"><a title="羊羊小心愿" href="http://wish.22dm.com" target="_blank"><img src="images/index/i_5.png" height="100"/></a></li>
+				<li class="swiper-slide"><a title="懒羊羊当大厨" href="http://cook.22dm.com" target="_blank"><img src="images/index/i_6.png" height="100"/></a></li>
+				<li class="swiper-slide"><a title="衣橱大冒险" href="http://tailor.22dm.com/" target="_blank"><img src="images/index/i_7.png" height="100"/></a></li>
+			</ul>
+		</div>
+		<div id="swiper-subject-prev" class="swiper-button-prev"></div>
+		<div id="swiper-subject-next" class="swiper-button-next"></div>
+	</div>
+	<div id="news">
+		<div id="biao"></div>
+		<div id="notice">
+			<ul>
+				<li><img src="images/nw_2.png" width="38" height="39"></li>
+				<li style="padding-top:10px;"> 
+					<a href="#" target="_blank"> 
+						<script src="/scripts/gonggao.js"></script> 
+					</a>
+				 </li>
+			</ul>
+		</div>
+		<script src="/scripts/topnews.js"></script>
+	</div>
+	<div id="entrance">
+		<a class="en_item_0" title="个人中心" href="/login.aspx?return=/index.html"></a>
+		<a class="en_item_1" title="活动专区" href="/act/index.html" target="_blank"></a>
+		<a class="en_item_2" title="最新资讯" href="/news/list.html" target="_blank"></a>
+		<a class="en_item_3" title="下载专区" href="/painting/index.html" target="_blank"></a>
+		<a class="en_item_4" title="动漫情报" href="/time/time.html" target="_blank"></a>
+		<a class="en_item_5" title="出版刊物" href="/book/bookShelf2.html" target="_blank"></a>
+		<a class="en_item_6" title="关于我们" href="/about1.html" target="_blank"></a>
+		<a class="en_item_7" title="社会责任" href="/CSR.html" target="_blank"></a>
+	</div>
+	<div id="dinav">
+		<ul>
+			<li><a href="/about4.html"> <img src="/images/index/x_1.png" width="96" height="129"></a></li>
+			<li><a href="/jobs.html"> <img src="/images/index/x_2.png" width="96" height="129"></a></li>
+			<li><a href="/law.html"> <img src="/images/index/x_3.png" width="96" height="129"></a></li>
+			<li><a href="/privacy.html"><img src="/images/index/x_4.png" width="96" height="129"></a></li>
+		</ul>
+	</div>
+	<div id="fnav">
+		<div id="fmain">
+			<ul>
+			<li><a href="http://e.t.qq.com/xiyangyang" target="_blank"><img src="/images/index/w_1.png" width="44" height="43"></a></li>
+			<li><a href="http://e.weibo.com/goatnwolf" target="_blank"><img src="/images/index/w_2.png" width="44" height="43"></a></li>
+			<li><a href="http://weibo.com/happyfamilycpe"  target="_blank"><img src="/images/index/w_3.png" width="44" height="43"></a></li>
+			<li><a href="http://user.qzone.qq.com/622000246" target="_blank"><img src="/images/index/w_4.png" width="44" height="43"></a></li>
+			</ul>
+			<p>广东原创动力文化传播有限公司 2005-2021 
+				<a href="https://beian.miit.gov.cn/" target="_blank" style="color:#fff">
+					粤ICP备11078732号
+				</a>
+			</p>
+		</div>
+	</div>
+	<div id="dialogs">
+		<v-login ref=""></v-login>
+		<v-gadget></v-gadget>
+	</div>
+	<div id="float">
 
-    <!-- 服务介绍 -->
-    <section class="container py-5">
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card service-card h-100">
-                    <div class="card-body">
-                        <h5>用户协议管理</h5>
-                        <p>严格遵守服务条款，保障用户权益:cite[1]</p>
-                    </div>
-                </div>
-            </div>
-            <!-- 更多服务卡片... -->
-        </div>
-    </section>
-
-    <!-- 底部 -->
-    <footer class="bg-dark text-light py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>© 2025 喜灰之声 Inc.</p>
-                </div>
-                <div class="col-md-6 text-end">
-                    <a href="#" class="text-light me-3">联系我们</a>
-                    <a href="#" class="text-light">隐私政策</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+	</div>
+</div>
+<script src="/js/swiper.min.js"></script>
+<script src="/js/index.js"></script>
+<script src="/js/public/login.js"></script>
+<script src="/js/public/float.js"></script>
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?b5f74d00a4e9152b939aae19dc2f3c0f";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+</script>
 </body>
 </html>
