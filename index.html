@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原创动力风格官网</title>
+    <!-- 引入Bootstrap框架 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* 自定义品牌色 */
+        :root {
+            --primary-color: #2A5CAA; /* 主色调参考网页8的蓝色科技感 */
+            --secondary-color: #FFD700; /* 辅助色增强活力 */
+        }
+        .navbar {
+            background-color: rgba(255,255,255,0.95);
+            border-bottom: 1px solid #eee;
+        }
+        .banner {
+            height: 600px;
+            background: linear-gradient(rgba(42,92,170,0.8), rgba(42,92,170,0.5)),
+                        url('https://example.com/bg.jpg') center/cover;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        .service-card {
+            transition: transform 0.3s; /* 交互效果参考网页3的H5预览体验 */
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" height="40">
+                <span class="ms-2">喜灰之声</span>
+            </a>
+            <div class="d-flex">
+                <a href="#" class="btn btn-outline-primary me-2">注册</a>
+                <a href="#" class="btn btn-primary">登录</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主视觉Banner -->
+    <section class="banner">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">让创意点亮世界</h1>
+            <p class="lead">专业内容服务与技术支持</p>
+        </div>
+    </section>
+
+    <!-- 服务介绍 -->
+    <section class="container py-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+                    <div class="card-body">
+                        <h5>用户协议管理</h5>
+                        <p>严格遵守服务条款，保障用户权益:cite[1]</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 更多服务卡片... -->
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>© 2025 喜灰之声 Inc.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="text-light me-3">联系我们</a>
+                    <a href="#" class="text-light">隐私政策</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
